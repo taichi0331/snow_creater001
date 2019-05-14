@@ -1,4 +1,4 @@
-# test_repository
+# snow_creater
 this is test repository
 
 クリックした場所に乱数で生成した適当な模様を生成するプログラム
