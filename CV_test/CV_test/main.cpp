@@ -6,7 +6,7 @@
 
 using namespace cv;
 int w = 500 ,h = 500;
-
+cv::Mat Map(cv::Size(w, h), CV_8UC3, cv::Scalar(0,0,0));
 int map[500][500];
 
 int N = 1000;
@@ -129,7 +129,7 @@ int main()
     
     mouseParam mouseEvent;
     
-    cv::Mat Map(cv::Size(w, h), CV_8UC3, cv::Scalar(0,0,0));
+
     int key;
     time_t t;
     
@@ -164,6 +164,9 @@ int main()
         else if(key==114){
             
             printf("R");
+            
+            Mat zero(cv::Size(w, h), CV_8UC3, cv::Scalar(0,0,0));
+            Map=zero;
             
             for(int i=0;i<h;i++)
                 for(int j=0;j<w;j++)
