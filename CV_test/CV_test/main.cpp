@@ -152,7 +152,7 @@ int main()
             
             printf("%s", ctime(&t));
             
-            std::string name = "snow_pic/map";
+            std::string name = "map";
             
             name+=ctime(&t);
             name+=".png";
